@@ -4,21 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/public/styles.css" />
-    <title>Tailwind css</title>
+    <title>Home - PC Components Shop</title>
   </head>
   <body class="bg-white dark:bg-slate-800 font-main">
     <div class="max-w-screen-xl mx-auto h-screen grid grid-rows-layout">
-      <!-- <header> -->
+      <!-- Header -->
       <header class="px-2 border-b flex items-center justify-between h-14">
         <a
           class="uppercase font-bold dark:text-purple-500 text-logo-main"
-          href="#"
-          >webDev</a
+          href="/"
+          >Shop</a
         >
         <nav class="hidden md:flex items-center">
           <ul class="inline-flex items-center">
-            <li><a class="header-link" href="#">Home</a></li>
-            <li><a class="header-link" href="#">About</a></li>
+            <li><a class="header-link" href="/">Home</a></li>
+            <li><a class="header-link" href="/shop.html">Products</a></li>
             <li><a class="header-link" href="#">Contact</a></li>
           </ul>
           <ul class="inline-flex items-center">
@@ -44,386 +44,34 @@
         </button>
       </header>
 
-      <!-- breadcrombs -->
-      <div class="flex items-center">
-        <div class="py-4 overflow-y-auto whitespace-nowrap flex items-center">
+      <!-- Hero Section -->
+      <main class="flex flex-col items-center justify-center text-center px-4">
+        <h1
+          class="text-5xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent"
+        >
+          Welcome to PC Components Shop
+        </h1>
+        <p class="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl">
+          Discover premium PC components and accessories for your ultimate
+          gaming and workstation setup.
+        </p>
+        <div class="space-x-4">
           <a
-            class="mx-2 dark:text-slate-400 text-gray-600 transition-all duration-300 hover:text-gray-900 flex items-center"
-            href="#"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="size-6"
-            >
-              <path
-                d="M11.47 3.841a.75.75 0 0 1 1.06 0l8.69 8.69a.75.75 0 1 0 1.06-1.061l-8.689-8.69a2.25 2.25 0 0 0-3.182 0l-8.69 8.69a.75.75 0 1 0 1.061 1.06l8.69-8.689Z"
-              />
-              <path
-                d="m12 5.432 8.159 8.159c.03.03.06.058.091.086v6.198c0 1.035-.84 1.875-1.875 1.875H15a.75.75 0 0 1-.75-.75v-4.5a.75.75 0 0 0-.75-.75h-3a.75.75 0 0 0-.75.75V21a.75.75 0 0 1-.75.75H5.625a1.875 1.875 0 0 1-1.875-1.875v-6.198a2.29 2.29 0 0 0 .091-.086L12 5.432Z"
-              />
-            </svg>
+            href="/1page.html"
+            class="rounded-xl bg-gradient-to-bl from-blue-900 to-cyan-800 text-white inline-flex items-center justify-center px-6 py-3 text-lg font-semibold transition-all duration-300 hover:bg-indigo-800"
+          >
+            Shop Now
           </a>
-          <span class="mx-2 text-gray-300 flex items-center"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="size-6"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </span>
           <a
-            class="mx-2 dark:text-slate-400 text-gray-600 transition-all duration-300 hover:text-gray-900 flex items-center"
             href="#"
-            >News</a
+            class="rounded-xl border-2 border-gray-300 dark:border-gray-600 text-gray-700 dark:text-gray-300 inline-flex items-center justify-center px-6 py-3 text-lg font-semibold transition-all duration-300 hover:bg-gray-100 dark:hover:bg-gray-700"
           >
-          <span class="mx-2 text-gray-300 flex items-center"
-            ><svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              fill="currentColor"
-              class="size-6"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M16.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L14.69 12 7.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z"
-                clip-rule="evenodd"
-              />
-            </svg>
-          </span>
-          <a
-            class="mx-2 dark:text-slate-400 text-gray-600 transition-all duration-300 hover:text-gray-900 flex items-center"
-            href="#"
-            >Tech</a
-          >
-        </div>
-      </div>
-
-      <!-- banners -->
-      <section class="px-2 lg:flex lg:space-x-1">
-        <a class="w-full lg:w-2/3 banners-bg" href="#">
-          <div
-            class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"
-          ></div>
-          <img
-            class="absolute left-0 top-0 w-full h-full z-0 object-cover"
-            src="public/img/morphling-550x600.jpg"
-            alt="AlohaDance"
-          />
-          <div class="p-4 absolute bottom-0 left-0 z-20">
-            <h2
-              class="text-4xl p-1 bg-gradient-to-r from-slate-300 to-slate-500 bg-clip-text text-transparent font-semibold text-gray-100 leading-tight"
-            >
-              Spirits go home!
-            </h2>
-            <span
-              class="rounded-xl bg-gradient-to-bl from-blue-900 to-cyan-800 text-white inline-flex items-center justify-center px-4 py-1 mb-2"
-              >Ecstasy</span
-            >
-            <div class="flex mt-3">
-              <img
-                class="h-10 w-10 rounded-full mr-2 object-cover"
-                src="https://i.pinimg.com/564x/77/5d/b3/775db3070918c2d34da3ddbefdccd6b4.jpg"
-                alt="author"
-              />
-              <div>
-                <p class="font-semibold text-gray-200 text-sm">Kirito</p>
-                <time class="text-gray-400 text-xs">13 September</time>
-              </div>
-            </div>
-          </div>
-        </a>
-
-        <a class="w-full lg:w-1/3 banners-bg" href="#">
-          <div
-            class="absolute left-0 top-0 w-full h-full z-10 bg-gradient-to-b from-black/10 to-black/70"
-          ></div>
-          <img
-            class="absolute left-0 top-0 w-full h-full z-0 object-cover"
-            src="public/img/Base_morphling.png"
-            alt="AlohaDance"
-          />
-          <div class="p-4 absolute bottom-0 left-0 z-20">
-            <h2
-              class="text-4xl p-1 bg-gradient-to-r from-slate-300 to-slate-500 bg-clip-text text-transparent font-semibold text-gray-100 leading-tight"
-            >
-              Return the king
-            </h2>
-            <span
-              class="rounded-xl bg-gradient-to-bl from-blue-900 to-cyan-800 text-white inline-flex items-center justify-center px-4 py-1 mb-2"
-              >Morph</span
-            >
-            <div class="flex mt-3">
-              <img
-                class="h-10 w-10 rounded-full mr-2 object-cover"
-                src="https://i.pinimg.com/564x/77/5d/b3/775db3070918c2d34da3ddbefdccd6b4.jpg"
-                alt="author"
-              />
-              <div>
-                <p class="font-semibold text-gray-200 text-sm">Kirito</p>
-                <time class="text-gray-400 text-xs">13 September</time>
-              </div>
-            </div>
-          </div>
-        </a>
-      </section>
-
-      <main class="lg:flex">
-        <div class="w-full lg:w-2/3">
-          <!-- post-cards -->
-          <section class="px-2">
-            <a class="block w-full lg:flex mb-10" href="#">
-              <img
-                class="rounded-lg border-4 border-black mr-4 h-48 w-full lg:w-48 opacity-80 object-cover"
-                src="https://i.pinimg.com/564x/56/fa/bc/56fabc3ac9756aeca3faa7dc7c956bc4.jpg"
-                alt="img"
-              />
-              <div class="flex flex-col justify-between">
-                <div>
-                  <h3
-                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
-                  >
-                    Morphling With Khanda!
-                  </h3>
-                  <p class="text-gray-700 dark:text-slate-400">
-                    Hero of the week. Morphling winner TI12
-                  </p>
-                </div>
-                <div class="flex mt-3">
-                  <img
-                    class="h-10 w-10 rounded-full mr-2 object-cover"
-                    src="https://i.pinimg.com/564x/77/5d/b3/775db3070918c2d34da3ddbefdccd6b4.jpg"
-                    alt="author"
-                  />
-                  <div>
-                    <p class="font-semibold text-gray-400 text-sm">Kirito</p>
-                    <time class="text-gray-400 text-xs">13 September</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a class="block w-full lg:flex mb-10" href="#">
-              <img
-                class="rounded-lg border-4 border-black mr-4 h-48 w-full lg:w-48 opacity-80 object-cover"
-                src="https://i.pinimg.com/236x/8c/48/07/8c480713a099f416fac0cf2341a4d7fd.jpg"
-                alt="img"
-              />
-              <div class="flex flex-col justify-between">
-                <div>
-                  <h3
-                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
-                  >
-                    Murcielago come back in WebDev
-                  </h3>
-                  <p class="text-gray-700 dark:text-slate-400">
-                    In a 6 months i wanna learn GIT, TailWInd and React
-                  </p>
-                </div>
-                <div class="flex mt-3">
-                  <img
-                    class="h-10 w-10 rounded-full mr-2 object-cover"
-                    src="https://i.pinimg.com/564x/39/38/58/39385833421d321be8dfc677389a69d9.jpg"
-                    alt="author"
-                  />
-                  <div>
-                    <p class="font-semibold text-gray-400 text-sm">Gleb</p>
-                    <time class="text-gray-400 text-xs">27 September</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a class="block w-full lg:flex mb-10" href="#">
-              <img
-                class="rounded-lg border-4 border-black mr-4 h-48 w-full lg:w-48 opacity-80 object-cover"
-                src="https://i.pinimg.com/564x/36/9a/8e/369a8e797e85e822d258c50afdb064c4.jpg"
-                alt="img"
-              />
-              <div class="flex flex-col justify-between">
-                <div>
-                  <h3
-                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
-                  >
-                    Wanna know something bout styles?
-                  </h3>
-                  <p class="text-gray-700 dark:text-slate-400">yeah Captain!</p>
-                </div>
-                <div class="flex mt-3">
-                  <img
-                    class="h-10 w-10 rounded-full mr-2 object-cover"
-                    src="https://i.pinimg.com/736x/76/b5/cb/76b5cb03c19da627331f901d94fcbc3b.jpg"
-                    alt="author"
-                  />
-                  <div>
-                    <p class="font-semibold text-gray-400 text-sm">Chinazes</p>
-                    <time class="text-gray-400 text-xs">29 September</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a class="block w-full lg:flex mb-10" href="#">
-              <img
-                class="rounded-lg border-4 border-black mr-4 h-48 w-full lg:w-48 opacity-80 object-cover"
-                src="public/img/4931e49edff10413e3359a747cd33b35.jpg"
-                alt="img"
-              />
-              <div class="flex flex-col justify-between">
-                <div>
-                  <h3
-                    class="dark:text-white mb-2 text-gray-700 font-bold text-2xl"
-                  >
-                    New Adventure Awaits!
-                  </h3>
-                  <p class="text-gray-700 dark:text-slate-400">
-                    Join us on a new journey through the world of web development.
-                  </p>
-                </div>
-                <div class="flex mt-3">
-                  <img
-                    class="h-10 w-10 rounded-full mr-2 object-cover"
-                    src="https://i.pinimg.com/564x/98/76/54/9876543210abcdef.jpg"
-                    alt="author"
-                  />
-                  <div>
-                    <p class="font-semibold text-gray-400 text-sm">Alex</p>
-                    <time class="text-gray-400 text-xs">5 October</time>
-                  </div>
-                </div>
-              </div>
-            </a>
-          </section>
-          <!-- pagination -->
-          <div class="mt-20 mb-10">
-            <ul class="flex justify-center">
-              <li>
-                <a class="pagination-item rounded-l-lg" href="#">Previous</a>
-              </li>
-              <li><a class="pagination-item" href="#">1</a></li>
-              <li><a class="pagination-item" href="#">2</a></li>
-              <li>
-                <a
-                  class="pagination-item text-blue-500 transition-all duration-300 hover:bg-blue-100 hover:text-blue-600"
-                  href="#"
-                  >3</a
-                >
-              </li>
-              <li><a class="pagination-item" href="#">4</a></li>
-              <li><a class="pagination-item" href="#">5</a></li>
-              <li><a class="pagination-item rounded-r-lg" href="#">Next</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="w-full lg:w-1/3 px-2">
-          <!-- topics -->
-          <div class="mb-5">
-            <h5
-              class="font-bold text-lg uppercase text-gray-700 dark:text-white mb-2"
-            >
-              Popular News
-            </h5>
-            <ul>
-              <li
-                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white transition-all duration-300 hover:border-gray-200"
-              >
-                <a
-                  class="dark:text-slate-400 flex items-center text-gray-600"
-                  href="#"
-                >
-                  <span
-                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-green-500 to-green-700"
-                  ></span>
-                  Vue
-                  <span class="dark:text-slate-400 text-gray-500 ml-auto"
-                    >23 articles</span
-                  >
-                </a>
-              </li>
-              <li
-                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white transition-all duration-300 hover:border-gray-200"
-              >
-                <a
-                  class="dark:text-slate-400 flex items-center text-gray-600"
-                  href="#"
-                >
-                  <span
-                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-orange-500 to-orange-700"
-                  ></span>
-                  Svelte
-                  <span class="dark:text-slate-400 text-gray-500 ml-auto"
-                    >13 articles</span
-                  >
-                </a>
-              </li>
-              <li
-                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white transition-all duration-300 hover:border-gray-200"
-              >
-                <a
-                  class="dark:text-slate-400 flex items-center text-gray-600"
-                  href="#"
-                >
-                  <span
-                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-red-500 to-red-700"
-                  ></span>
-                  Angular
-                  <span class="dark:text-slate-400 text-gray-500 ml-auto"
-                    >15 articles</span
-                  >
-                </a>
-              </li>
-              <li
-                class="dark:border-transparent dark:hover:border-gray-200 px-1 py-4 border-y border-white transition-all duration-300 hover:border-gray-200"
-              >
-                <a
-                  class="dark:text-slate-400 flex items-center text-gray-600"
-                  href="#"
-                >
-                  <span
-                    class="inline-block w-4 h-4 mr-3 bg-gradient-to-tr from-blue-500 to-blue-700"
-                  ></span>
-                  React
-                  <span class="dark:text-slate-400 text-gray-500 ml-auto"
-                    >69 articles</span
-                  >
-                </a>
-              </li>
-            </ul>
-          </div>
-          <!-- divider -->
-          <div class="border border-dotted md:hidden lg:block"></div>
-
-          <!-- subscribe -->
-          <div class="my-5 md:my-0 lg:my-5">
-            <h5
-              class="font-bold text-lg uppercase dark:text-white text-gray-700dark:text-white mb-2"
-            >
-              Subscribe
-            </h5>
-            <p class="dark:text-slate-400 text-gray-600 mb-4">
-              Subscribe to our Newsletter
-            </p>
-            <input
-              placeholder="your email address"
-              type="email"
-              class="text-gray-700 bg-gray-100 p-2 w-full border rounded-t transition-all duration-300 hover:border-gray-600"
-            />
-            <button
-              class="px-4 py-2 bg-indigo-600 text-white rounded-b w-full transition-all duration-300 hover:bg-indigo-800"
-            >
-              Subscribe
-            </button>
-          </div>
-          <!-- divider -->
-          <div class="border border-dotted md:hidden lg:block"></div>
+            Learn More
+          </a>
         </div>
       </main>
 
-      <!-- footer -->
+      <!-- Footer -->
       <footer class="border-t mt-10 py-10 px-2">
         <div class="md:flex">
           <div class="mb-5 w-full md:w-2/5">
@@ -431,19 +79,19 @@
               Company
             </h6>
             <ul>
-              <li><a class="footer-link" href="#">Team</a></li>
               <li><a class="footer-link" href="#">About Us</a></li>
+              <li><a class="footer-link" href="#">Careers</a></li>
             </ul>
           </div>
 
           <div class="w-full md:w-2/5">
             <h6 class="font-semibold dark:text-white text-gray-700 mb-3">
-              Content
+              Support
             </h6>
             <ul>
-              <li><a class="footer-link" href="#">Block</a></li>
-              <li><a class="footer-link" href="#">Policy</a></li>
-              <li><a class="footer-link" href="#">Documentation</a></li>
+              <li><a class="footer-link" href="#">Help Center</a></li>
+              <li><a class="footer-link" href="#">Returns</a></li>
+              <li><a class="footer-link" href="#">Shipping</a></li>
             </ul>
           </div>
 
